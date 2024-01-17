@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Quize</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header--wrapper">
+                <div class="header--logo">Super<span class="header--span">Quize</span></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="left-panel hide">
+        <div class="left-panel--wrapper">
+            <h3 class="title title_mini">Параметры игры</h3>
+            <div class="left-panel--inner">
+                <div class="left-panel--text">Категория: <span class="subtitle">не важно</span></div>
+                <div class="left-panel--text">Сложность: <span class="subtitle">не важно</span></div>
+                <div class="left-panel--text">Тип ответа: <span class="subtitle">не важно</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="param">
+        <div class="container">
+            <h2 class="title">Параметры игры</h2>
+            <div class="game-board--wrapper">
+                <form action="" class="game-board--form">
+                    <div class="game-board--input">
+                        <label for="category">Темы:</label>
+                        <select id="category" class="game-board--select" name="category">
+                            <option value="0">Не важно</option>
+                            <option value="1">Общие</option>
+                            <option value="2">Книги</option>
+                            <option value="3">Кино</option>
+                            <option value="4">Музыка</option>
+                            <option value="5">Мюзиклы и театры</option>
+                            <option value="6">Телевиденье</option>
+                            <option value="7">Видеоигры</option>
+                            <option value="8">Настольные игры</option>
+                            <option value="9">Наука и природа</option>
+                            <option value="10">Компьютеры</option>
+                            <option value="11">Математика</option>
+                            <option value="12">Мифология</option>
+                            <option value="13">Спорт</option>
+                            <option value="14">География</option>
+                            <option value="15">История</option>
+                            <option value="16">Политика</option>
+                            <option value="17">Искусство</option>
+                            <option value="18">Знаменитости</option>
+                            <option value="19">Животные</option>
+                            <option value="20">Транспортные средства</option>
+                            <option value="21">Комиксы</option>
+                            <option value="22">Гаджеты</option>
+                            <option value="23">Аниме и манга</option>
+                            <option value="24">Мультфильмы и анимации</option>
+
+                        </select>
+                    </div>
+
+                    <div class="game-board--input">
+                        <label for="difficulty">Сложность:</label>
+                        <select id="difficulty" class="game-board--select" name="difficulty">
+                            <option value="all">Не важно</option>
+                            <option value="easy">Легко</option>
+                            <option value="medium">Средне</option>
+                            <option value="hard">Сложно</option>
+                        </select>
+                    </div>
+
+                    <div class="game-board--input">
+                        <label for="answerType">Тип ответов:</label>
+                        <select id="answerType" class="game-board--select" name="answerType">
+                            <option value="all">Не важно</option>
+                            <option value="multiple">Множество вариантов</option>
+                            <option value="boolean">Правда/Ложь</option>
+                        </select>
+                    </div>
+
+                    <button id="start-btn" type="button" class="button">Начать игру</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="game-board hide">
+        <div class="container">
+            <h2 id="question-num" class="title">Вопрос №1</h2>
+            <div class="game-board--wrapper">
+                <div class="game-board--inner">
+                    <div class="game-board--question">
+                        <!-- Зимой и летом одним цветом. Что это? -->
+                    </div>
+                    <div class="game-board--buttons">
+                        <!-- <button type="button" class="button">Ель</button> -->
+                    </div>
+                    <div class="game-board--nav-btn">
+                        <!-- <button type="button" class="button button_skip">Дальше</button> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
